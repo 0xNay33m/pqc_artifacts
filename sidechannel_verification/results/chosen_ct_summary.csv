@@ -1,0 +1,3 @@
+alg,n_total,mean_valid,mean_corrupted,mean_diff_cycles,median_diff_cycles,max_abs_welch_t
+ML-KEM-768,199979,39872.7,39876.4,-3.7,0,3.674
+BIKE-L1,999944,1196029.5,1195990.7,38.9,-21,1.191

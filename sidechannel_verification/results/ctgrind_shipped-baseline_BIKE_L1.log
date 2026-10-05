@@ -1,0 +1,37 @@
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877200: OQS_KEM_bike_l1_rotate_right_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x48719CA: OQS_KEM_bike_l1_decode (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x48762F7: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877200: OQS_KEM_bike_l1_rotate_right_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x4871D5A: OQS_KEM_bike_l1_decode (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x48762F7: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877200: OQS_KEM_bike_l1_rotate_right_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x487202A: OQS_KEM_bike_l1_decode (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x48762F7: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877200: OQS_KEM_bike_l1_rotate_right_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x4872319: OQS_KEM_bike_l1_decode (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x48762F7: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877A50: OQS_KEM_bike_l1_secure_set_bits_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x4876DF2: OQS_KEM_bike_l1_generate_error_vector (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x487645C: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+==143472== Use of uninitialised value of size 1
+==143472==    at 0x4877A50: OQS_KEM_bike_l1_secure_set_bits_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x4876E09: OQS_KEM_bike_l1_generate_error_vector (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x487645C: OQS_KEM_bike_l1_decaps (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143472==    by 0x10933A: main (ct_test.c:66)
+==143472== 
+INFO: alg=BIKE-L1 poison=1 decaps_rc=0

@@ -1,0 +1,15 @@
+==144962== Memcheck, a memory error detector
+==144962== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==144962== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==144962== Command: ctgrind/ct_test_shipped-baseline ML-KEM-768 1
+==144962== 
+INFO: alg=ML-KEM-768 poison=1 decaps_rc=0
+==144962== 
+==144962== HEAP SUMMARY:
+==144962==     in use at exit: 0 bytes in 0 blocks
+==144962==   total heap usage: 28 allocs, 28 frees, 17,056 bytes allocated
+==144962== 
+==144962== All heap blocks were freed -- no leaks are possible
+==144962== 
+==144962== For lists of detected and suppressed errors, rerun with: -s
+==144962== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 956 from 215)

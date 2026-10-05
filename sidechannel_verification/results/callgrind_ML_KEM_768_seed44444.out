@@ -1,0 +1,1900 @@
+# callgrind format
+version: 1
+creator: callgrind-3.24.0
+pid: 151275
+cmd:  cache_probe/cache_probe ML-KEM-768 44444
+part: 1
+
+
+desc: I1 cache: 32768 B, 64 B, 8-way associative
+desc: D1 cache: 32768 B, 64 B, 8-way associative
+desc: LL cache: 8388608 B, 64 B, direct-mapped
+
+desc: Timerange: Basic block 0 - 121524
+desc: Trigger: Program termination
+
+positions: line
+events: Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+summary: 147663 21458 12990 2159 95 90 94 7 17
+
+
+ob=(5) /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0
+fl=(149) ???
+fn=(706) SHA3_sha3_512
+0 11 0 5 1
+cfn=(708) OQS_SHA3_sha3_512_inc_init
+calls=3 0 
+0 121 25 22 2
+0 4 0 1
+cfn=(734) OQS_SHA3_sha3_512_inc_absorb
+calls=3 0 
+0 107 28 15 3 1
+0 3 0 1 1
+cfn=(740) OQS_SHA3_sha3_512_inc_finalize
+calls=3 0 
+0 2781 362 32 5
+0 2 0 1
+cfn=(752) OQS_SHA3_sha3_512_inc_ctx_release
+calls=3 0 
+0 116 30 22 1
+0 6 5
+
+fn=(708)
+0 2 2
+cfn=(710) SHA3_sha3_512_inc_init
+calls=3 0 
+0 119 23 22 2
+
+fn=(754) SHA3_sha3_512_inc_ctx_release
+0 3 1 0 1
+cfn=(756) OQS_MEM_aligned_secure_free
+calls=3 0 
+0 111 27 22
+
+fn=(782) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix
+0 24 1 11 3 0 1
+cfn=(832) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform
+calls=3 0 
+0 9678 1298 304 44 1
+0 4 0 1
+cfn=(864) 0x00000000001b24a8
+calls=3 0 
+0 134 19 18 7
+0 1 1 0 1 1
+0 24 0 8
+cfn=(864)
+calls=24 0 
+0 1072 152 144
+0 8 8
+0 70 5 36 3
+cfn=(784) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4
+calls=2 0 
+0 21783 3471 2560 541 17 37 2 1 17
+0 11 0 5 2
+cfn=(784)
+calls=2 0 
+0 21862 3479 2564 346 4
+0 1 0 0 1
+
+fn=(818) SHA3_shake128_x4_inc_squeeze
+0 8 2 4 1
+cfn=(820) keccak_x4_inc_squeeze
+calls=6 0 
+0 35220 5996 3494 761 1 29 2 0 17
+0 4 2
+
+fn=(822) KeccakP1600times4_ExtractBytes_avx2
+0 5576 776 728 2 0 12
+
+fn=(838) OQS_SHA3_shake128_absorb_once
+0 7 0 4 1
+cfn=(840) OQS_SHA3_shake128_inc_ctx_reset
+calls=3 0 
+0 27 10 11 2 1
+0 4 0 1
+cfn=(844) OQS_SHA3_shake128_inc_absorb
+calls=3 0 
+0 89 23 13 6
+0 5 3 0 1
+cfn=(848) OQS_SHA3_shake128_inc_finalize
+calls=3 0 
+0 37 12 6 1
+
+fn=(864)
+0 9 0 9 1
+cfn=(866) 0x00000000001b24ba
+calls=27 0 
+0 585 81 72 6
+0 18 0 9
+cfn=(866)
+calls=27 0 
+0 585 81 72
+0 9 9
+
+fn=(880) OQS_SHA3_shake256_x4_inc_init
+0 4 4
+cfn=(882) SHA3_shake256_x4_inc_init
+calls=6 0 
+0 440 46 232 19
+
+fn=(886) SHA3_shake256_x4_inc_absorb
+0 52 6 14 6
+cfn=(806) KeccakP1600times4_AddBytes_avx2
+calls=6 0 
+0 142 20 20 6
+0 12 4 2
+cfn=(806)
+calls=6 0 
+0 142 20 20
+0 12 4 2 2
+cfn=(806)
+calls=6 0 
+0 142 20 20
+0 12 4 2
+cfn=(806)
+calls=6 0 
+0 142 20 20
+0 18 14 2 2
+
+fn=(904) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_ntt
+0 12 0 0 1
+cfn=(910) 0x00000000001b1574
+calls=15 0 
+0 3516 396 192 50 3
+0 6 6 0 1 2
+
+fn=(932) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_mulcache_compute
+0 12 0 0 1
+cfn=(938) 0x00000000001b1438
+calls=12 0 
+0 348 108 48 5 1 10
+0 6 6 0 1
+
+fn=(1116) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec
+0 18 0 8 2 0 0 2
+cfn=(1012) OQS_SHA3_sha3_256
+calls=1 0 
+0 25390 3317 315 43 18
+0 17 3 5 1 0 0 1
+cfn=(1118) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_dec
+calls=1 0 
+0 6002 818 1138 84 17 1 70 5
+0 8 3 2 1 0 0 1
+cfn=(704) OQS_SHA3_sha3_512
+calls=1 0 
+0 3153 452 99 14 2
+0 5 1 1
+cfn=(1064) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc
+calls=1 0 
+0 86078 13020 10651 1944 27 86 2 1 17
+0 420 206 138 5 5 0 4
+cfn=(1134) OQS_SHA3_shake256
+calls=1 0 
+0 25334 3306 310 47 4 1 8
+0 454 73 176 2 1 0 2
+
+fn=(1148) SHA3_shake256_inc_finalize
+0 6 3 2 1
+cfn=(744) KeccakP1600_AddByte_avx2
+calls=1 0 
+0 11 2 1
+0 4 1 1 1 0 0 1
+cfn=(744)
+calls=1 0 
+0 11 2 1
+0 3 2 1
+
+fn=(1156) SHA3_shake256_inc_ctx_release
+0 3 1 0 1
+cfn=(756)
+calls=1 0 
+0 111 27 22 0 1
+
+fn=(1102) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_compress10_avx2
+0 1209 63 96 4 0 7
+
+fn=(1120) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_decompress_du
+0 6 0 3
+cfn=(1122) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_decompress_d10
+calls=1 0 
+0 130 23 20 11 1 0 10 1
+0 3 0 1 1
+cfn=(1122)
+calls=1 0 
+0 130 23 20
+0 6 2
+cfn=(1122)
+calls=1 0 
+0 130 23 20
+
+fn=(712) OQS_MEM_aligned_alloc
+0 8 0 0 5
+cob=(2) /usr/lib/x86_64-linux-gnu/libc.so.6
+cfi=(163) ./malloc/./malloc/malloc.c
+cfn=(718) aligned_alloc
+calls=22 3634 
+0 648 112 64 34 7 0 0 1
+0 8 8 0 4
+
+fn=(744)
+0 88 16 8
+
+fn=(748) KeccakP1600_Permute_24rounds_avx2
+0 352 154 22 6
+cfn=(750) __KeccakF1600
+calls=48 0 
+0 57046 6886 0 25 6
+0 198 22 154 3
+
+fn=(798) OQS_SHA3_shake128_x4_inc_ctx_reset
+0 4 4 0 2
+cfn=(800) SHA3_shake128_x4_inc_ctx_reset
+calls=6 0 
+0 252 16 210 2
+
+fn=(820)
+0 108 12 36 6
+cfn=(822)
+calls=12 0 
+0 700 96 92 0 0 6
+0 32 4 12
+cfn=(822)
+calls=12 0 
+0 64 12 8 2
+0 56 16 8 4
+cfn=(822)
+calls=24 0 
+0 764 108 100 0 0 4
+0 56 16 8
+cfn=(822)
+calls=24 0 
+0 764 108 100
+0 56 16 8 1
+cfn=(822)
+calls=24 0 
+0 764 108 100
+0 16 8 8
+cfn=(824) KeccakP1600times4_PermuteAll_24rounds_avx2
+calls=24 0 
+0 40704 7064 3808 1396 1 17 2 0 17
+0 112 28 12 4
+cfn=(822)
+calls=12 0 
+0 630 86 82 0 0 2
+0 28 8 4
+cfn=(822)
+calls=12 0 
+0 630 86 82
+0 28 8 4 4
+cfn=(822)
+calls=12 0 
+0 630 86 82
+0 28 8 4
+cfn=(822)
+calls=12 0 
+0 630 86 82
+0 36 28 4 2
+
+fn=(824)
+0 40704 7064 3808 1396 1 17 2 0 17
+
+fn=(826) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2
+0 6355 666 415 22 16
+
+fn=(830) SHA3_shake128_x4_inc_ctx_release
+0 6 2 0 1
+cfn=(756)
+calls=6 0 
+0 298 54 84 33 1
+
+fn=(854) SHA3_shake128_inc_squeeze
+0 19 3 5 2
+cfn=(746) KeccakP1600_ExtractBytes_avx2
+calls=3 0 
+0 6 2 1 2
+0 12 2 2
+cfn=(746)
+calls=6 0 
+0 368 88 44 1
+0 6 3 3
+cfn=(748)
+calls=9 0 
+0 7854 963 24 10
+0 26 4 4 1
+cfn=(746)
+calls=3 0 
+0 184 44 22
+0 7 5 1
+
+fn=(896) OQS_SHA3_shake256_x4_inc_ctx_release
+0 4 4 0 2
+cfn=(898) SHA3_shake256_x4_inc_ctx_release
+calls=6 0 
+0 304 56 84 28
+
+fn=(902) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_ntt
+0 6 0 4 1
+cfn=(904)
+calls=5 0 
+0 1178 134 64 52 5
+0 4 0 2
+cfn=(904)
+calls=5 0 
+0 1178 134 64
+0 6 2 0 1
+cfn=(904)
+calls=5 0 
+0 1178 134 64
+
+fn=(910)
+0 3516 396 192 50 3
+
+fn=(938)
+0 348 108 48 5 1 10
+
+fn=(942) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_basemul_acc_montgomery_cached_avx2
+0 105 0 45 2
+cfn=(948) 0x00000000001afaa8
+calls=12 0 
+0 1165 265 100 20 1 4
+0 5 5 0 1
+0 95 5 5
+cfn=(948)
+calls=12 0 
+0 1165 265 100
+0 5 5
+0 65 5 5 1
+cfn=(948)
+calls=12 0 
+0 1165 265 100
+0 5 5
+0 885 365 480 6
+
+fn=(984) 0x00000000001b2628
+0 15 10 5 1
+cfn=(986) 0x00000000001b2643
+calls=18 0 
+0 405 45 40 7
+0 10 0 5
+cfn=(986)
+calls=18 0 
+0 405 45 40
+0 5 5
+
+fn=(1014) SHA3_sha3_256
+0 11 0 5 2
+cfn=(1016) OQS_SHA3_sha3_256_inc_init
+calls=3 0 
+0 121 25 22 13 4
+0 4 0 1
+cfn=(1020) OQS_SHA3_sha3_256_inc_absorb
+calls=3 0 
+0 22376 2901 235 19 10
+0 3 0 1
+cfn=(1026) OQS_SHA3_sha3_256_inc_finalize
+calls=3 0 
+0 2749 354 28 7
+0 2 0 1
+cfn=(1030) OQS_SHA3_sha3_256_inc_ctx_release
+calls=3 0 
+0 116 30 22 1 3
+0 6 5
+
+fn=(1016)
+0 2 2 0 1
+cfn=(1018) SHA3_sha3_256_inc_init
+calls=3 0 
+0 119 23 22 12 4
+
+fn=(1048) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_frombytes
+0 12
+cfn=(1054) 0x00000000001b2178
+calls=12 0 
+0 912 96 108 7 10 3 0 3
+0 6 6 0 1 1
+
+fn=(1056) 0x00000000001b2199
+0 876 84 96 6 10 3 0 3
+
+fn=(1064)
+0 23 1 11 2
+cfn=(1046) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_frombytes
+calls=2 0 
+0 480 53 58 0 0 3
+0 10 1 3 1
+cfn=(1066) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_frommsg
+calls=2 0 
+0 1939 260 259 4 0 1
+0 8 0 3 1
+cfn=(782)
+calls=2 0 
+0 54672 8434 5651 948 23 38 2 1 17
+0 11 0 4 1
+cfn=(874) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_getnoise_eta1_4x
+calls=2 0 
+0 8385 1192 1006 431 1 1
+0 14 0 5 1
+cfn=(874)
+calls=2 0 
+0 8385 1192 1006 372 0 21
+0 3 0 1 1
+cfn=(902)
+calls=2 0 
+0 1775 202 99 53 2
+0 3 0 1
+cfn=(930) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_mulcache_compute
+calls=2 0 
+0 198 59 28 9 0 9
+0 5 1 1
+cfn=(940) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_basemul_acc_montgomery_cached
+calls=2 0 
+0 938 237 167 30
+0 5 0 1 1
+cfn=(940)
+calls=2 0 
+0 938 237 167
+0 5 0 1
+cfn=(940)
+calls=2 0 
+0 938 237 167
+0 5 1 1
+cfn=(940)
+calls=2 0 
+0 938 237 167 0 1 4
+0 2 0 1
+cfn=(1068) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_invntt_tomont
+calls=2 0 
+0 1967 238 99 53
+0 2 0 1 1
+cfn=(1070) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_invntt_tomont
+calls=2 0 
+0 653 79 32
+0 3 0 1
+cfn=(972) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_add
+calls=2 0 
+0 165 101 52 9
+0 3 1 1
+cfn=(974) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_add
+calls=2 0 
+0 50 33 16
+0 3 1 1
+cfn=(974)
+calls=2 0 
+0 50 33 16
+0 2 0 1
+cfn=(976) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_reduce
+calls=2 0 
+0 521 67 57 9
+0 2 0 1
+cfn=(978) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_reduce
+calls=2 0 
+0 171 22 18
+0 3 1 1 1
+cfn=(1098) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_polyvec_compress_du
+calls=2 0 
+0 1227 65 100 6 0 7
+0 5 1 1
+cfn=(1104) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_compress_d4
+calls=2 0 
+0 89 20 4 7 0 2
+0 1482 14 1441 3
+
+fn=(1104)
+0 1
+cfn=(1106) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_compress_d4_avx2
+calls=2 0 
+0 88 20 4 7 0 2
+
+fn=(1118)
+0 17 0 8 1 0 0 1
+cfn=(1120)
+calls=1 0 
+0 405 71 64 12 1 0 10 1
+0 4 0 1
+cfn=(1126) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_decompress_d4
+calls=1 0 
+0 122 20 16 9 1 0 9 1
+0 4 0 1
+cfn=(1046)
+calls=1 0 
+0 480 53 58 9 11 0 0 3
+0 2 0 1 1 0 0 1
+cfn=(902)
+calls=1 0 
+0 1775 202 99 1 3
+0 3 0 1
+cfn=(930)
+calls=1 0 
+0 198 59 28 1 1 1
+0 5 0 1
+cfn=(940)
+calls=1 0 
+0 938 237 167
+0 2 0 1
+cfn=(1070)
+calls=1 0 
+0 653 79 32
+0 3 0 1
+cfn=(1130) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_sub
+calls=1 0 
+0 50 33 16 4 0 0 4
+0 2 0 1
+cfn=(978)
+calls=1 0 
+0 171 22 18
+0 3 1 1 1 0 0 1
+cfn=(1132) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_tomsg
+calls=1 0 
+0 533 34 15 44 0 0 43
+0 632 7 608 1 0 0 1
+
+fn=(1122)
+0 3 0 0 1
+cfn=(1124) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_decompress10_avx2
+calls=3 0 
+0 387 69 60 10 1 0 10 1
+
+fn=(1136) SHA3_shake256
+0 13 0 6 1
+cfn=(1138) OQS_SHA3_shake256_inc_init
+calls=1 0 
+0 121 25 22 14 1 0 2
+0 4 0 1 1 0 0 1
+cfn=(1142) OQS_SHA3_shake256_inc_absorb
+calls=1 0 
+0 22312 2885 227 19 1
+0 2 0 1
+cfn=(1146) OQS_SHA3_shake256_inc_finalize
+calls=1 0 
+0 37 12 6 2 1 0 1
+0 4 0 1
+cfn=(1150) OQS_SHA3_shake256_inc_squeeze
+calls=1 0 
+0 2714 346 23 8 0 1 3
+0 2 0 1
+cfn=(1154) OQS_SHA3_shake256_inc_ctx_release
+calls=1 0 
+0 116 30 22 1 1
+0 7 6
+
+fn=(1070)
+0 10
+cfn=(1076) 0x00000000001b073c
+calls=9 0 
+0 3250 390 160 52
+0 5 5 0 1
+
+fn=(1106)
+0 88 20 4 7 0 2
+
+fn=(734)
+0 2 2 0 0 1
+cfn=(736) SHA3_sha3_512_inc_absorb
+calls=3 0 
+0 105 26 15 3
+
+fn=(736)
+0 20 3 6 3
+cfn=(738) KeccakP1600_AddBytes_avx2
+calls=3 0 
+0 78 17 8
+0 7 6 1
+
+fn=(786) OQS_SHA3_shake128_x4_inc_init
+0 4 4 0 2 1
+cfn=(788) SHA3_shake128_x4_inc_init
+calls=6 0 
+0 440 46 232 14 2 5 0 1
+
+fn=(796) OQS_SHA3_shake128_x4_absorb_once
+0 28 0 14 2
+cfn=(798)
+calls=6 0 
+0 256 20 210 4
+0 14 0 2
+cfn=(802) OQS_SHA3_shake128_x4_inc_absorb
+calls=6 0 
+0 726 124 110 16 0 2
+0 18 12 0 2
+cfn=(808) OQS_SHA3_shake128_x4_inc_finalize
+calls=6 0 
+0 222 52 38 9
+
+fn=(802)
+0 4 4
+cfn=(804) SHA3_shake128_x4_inc_absorb
+calls=6 0 
+0 722 120 110 16 0 2
+
+fn=(856) OQS_SHA3_shake128_inc_ctx_release
+0 2 2
+cfn=(858) SHA3_shake128_inc_ctx_release
+calls=3 0 
+0 114 28 22 1
+
+fn=(890) SHA3_shake256_x4_inc_finalize
+0 6 2
+cfn=(812) keccak_x4_inc_finalize.constprop.0
+calls=6 0 
+0 212 46 38 8
+
+fn=(948)
+0 3495 795 300 20 1 4
+
+fn=(978)
+0 10
+cfn=(984)
+calls=18 0 
+0 840 105 90 8
+0 5 5 0 1
+
+fn=(1020)
+0 2 2
+cfn=(1022) SHA3_sha3_256_inc_absorb
+calls=3 0 
+0 22374 2899 235 19 10
+
+fn=(1030)
+0 2 2
+cfn=(1032) SHA3_sha3_256_inc_ctx_release
+calls=3 0 
+0 114 28 22 1 3
+
+fn=(1066)
+0 1939 260 259 4 0 1
+
+fn=(804)
+0 52 6 14 8 0 1
+cfn=(806)
+calls=6 0 
+0 154 22 22 6 0 1
+0 12 4 2
+cfn=(806)
+calls=6 0 
+0 154 22 22
+0 12 4 2
+cfn=(806)
+calls=6 0 
+0 154 22 22
+0 12 4 2 2
+cfn=(806)
+calls=6 0 
+0 154 22 22
+0 18 14 2
+
+fn=(808)
+0 4 4 0 1
+cfn=(810) SHA3_shake128_x4_inc_finalize
+calls=6 0 
+0 218 48 38 8
+
+fn=(836) SHA3_shake128_inc_init
+0 7 0 3 1
+cfn=(712)
+calls=3 0 
+0 83 15 8 7
+0 7 0 2
+cob=(2)
+cfi=(171) ./nptl/./nptl/pthread_once.c
+cfn=(680) pthread_once@@GLIBC_2.34
+calls=3 139 
+0 5 2 0 1
+0 1 1
+0 2 1 1
+cfn=(732) KeccakP1600_Initialize_avx2
+calls=3 0 
+0 9 1 7 1
+0 5 3 1 1
+
+fn=(844)
+0 2 2
+cfn=(846) SHA3_shake128_inc_absorb
+calls=3 0 
+0 87 21 13 6
+
+fn=(846)
+0 20 3 6 3
+cfn=(738)
+calls=3 0 
+0 60 12 6 3
+0 7 6 1
+
+fn=(1134)
+0 2 2 0 1 0 0 1
+cfn=(1136)
+calls=1 0 
+0 25332 3304 310 46 4 1 7
+
+fn=(738)
+0 2694 623 302 9 5
+
+fn=(762) OQS_MEM_cleanse
+0 24 0 0 4
+cob=(2)
+cfi=(174) ./string/./string/explicit_bzero.c
+cfn=(768) explicit_bzero
+calls=22 34 
+0 408 32 152 22 2
+0 8 8 0 4 1
+
+fn=(794) KeccakP1600times4_InitializeAll_avx2
+0 660 6 606 6 0 4
+
+fn=(812)
+0 40 8 12 6
+cfn=(814) KeccakP1600times4_AddByte_avx2
+calls=12 0 
+0 28 4 4
+0 20 8 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 8 4 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 8 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 4 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 4 4 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 4 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 4 4
+cfn=(814)
+calls=12 0 
+0 28 4 4
+0 20 12 4
+
+fn=(814)
+0 224 32 32
+
+fn=(832)
+0 14 0 7 2
+cfn=(834) OQS_SHA3_shake128_inc_init
+calls=3 0 
+0 121 25 22 12
+0 4 0 1
+cfn=(838)
+calls=3 0 
+0 169 48 35 11 1
+0 5 0 1
+cfn=(852) OQS_SHA3_shake128_inc_squeeze
+calls=3 0 
+0 8484 1116 106 16
+0 3 0 1
+cfn=(826)
+calls=3 0 
+0 680 72 45
+0 7 0 1 2
+cfn=(856)
+calls=3 0 
+0 116 30 22 1
+0 75 7 63
+
+fn=(840)
+0 2 2 0 1 1
+cfn=(842) SHA3_shake128_inc_ctx_reset
+calls=3 0 
+0 25 8 11 1
+
+fn=(852)
+0 2 2
+cfn=(854)
+calls=3 0 
+0 8482 1114 106 16
+
+fn=(898)
+0 6 2
+cfn=(756)
+calls=6 0 
+0 298 54 84 28
+
+fn=(1068)
+0 3 0 2
+cfn=(1070)
+calls=2 0 
+0 653 79 32 53
+0 2 0 1
+cfn=(1070)
+calls=2 0 
+0 653 79 32
+0 3 1
+cfn=(1070)
+calls=2 0 
+0 653 79 32
+
+fn=(1144) SHA3_shake256_inc_absorb
+0 2 1 0 1
+cfn=(1024) keccak_inc_absorb.constprop.0
+calls=1 0 
+0 22308 2882 227 18 1
+
+fn=(1150)
+0 2 2 0 1 0 0 1
+cfn=(1152) SHA3_shake256_inc_squeeze
+calls=1 0 
+0 2712 344 23 7 0 1 2
+
+fn=(1124)
+0 387 69 60 10 1 0 10 1
+
+fn=(1126)
+0 1
+cfn=(1128) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_decompress_d4_avx2
+calls=1 0 
+0 121 20 16 9 1 0 9 1
+
+fn=(1138)
+0 2 2
+cfn=(1140) SHA3_shake256_inc_init
+calls=1 0 
+0 119 23 22 14 1 0 2
+
+fn=(710)
+0 7 0 3 1
+cfn=(712)
+calls=3 0 
+0 83 15 8
+0 7 0 2 1
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=3 139 
+0 5 2
+0 1 1
+0 2 1 1
+cfn=(732)
+calls=3 0 
+0 9 1 7
+0 5 3 1
+
+fn=(858)
+0 3 1 0 1
+cfn=(756)
+calls=3 0 
+0 111 27 22
+
+fn=(878) SHA3_shake256_x4
+0 32 0 16 1
+cfn=(880)
+calls=6 0 
+0 444 50 232 19
+0 14 10 2
+cfn=(884) OQS_SHA3_shake256_x4_inc_absorb
+calls=6 0 
+0 678 116 102 16
+0 4 0 2
+cfn=(888) OQS_SHA3_shake256_x4_inc_finalize
+calls=6 0 
+0 222 52 38 9
+0 14 0 2 1
+cfn=(892) OQS_SHA3_shake256_x4_inc_squeeze
+calls=6 0 
+0 11632 2004 1154 659
+0 4 0 2
+cfn=(896)
+calls=6 0 
+0 308 60 84 30
+0 16 14
+
+fn=(882)
+0 14 0 6 2
+cfn=(712)
+calls=6 0 
+0 166 30 16 10
+0 14 0 4
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=6 139 
+0 10 4 0 1
+0 2 2
+0 4 2 2
+cfn=(794)
+calls=6 0 
+0 220 2 202 4
+0 10 6 2 2
+
+fn=(892)
+0 4 4
+cfn=(894) SHA3_shake256_x4_inc_squeeze
+calls=6 0 
+0 11628 2000 1154 659
+
+fn=(972)
+0 6 0 3 1
+cfn=(974)
+calls=3 0 
+0 50 33 16 7
+0 3 0 1
+cfn=(974)
+calls=3 0 
+0 50 33 16
+0 6 2 0 1
+cfn=(974)
+calls=3 0 
+0 50 33 16
+
+fn=(974)
+0 250 165 80 7
+
+fn=(1032)
+0 3 1 0 1
+cfn=(756)
+calls=3 0 
+0 111 27 22 0 3
+
+fn=(1054)
+0 12 6 6 1
+cfn=(1056)
+calls=12 0 
+0 438 42 48 6 6 1 0 1
+0 18 0 6
+cfn=(1056)
+calls=12 0 
+0 438 42 48 0 4 2 0 2
+0 6 6
+
+fn=(1128)
+0 121 20 16 9 1 0 9 1
+
+fn=(1140)
+0 7 0 3 1 0 0 1
+cfn=(712)
+calls=1 0 
+0 83 15 8 10 1
+0 7 0 2 1 0 0 1
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=1 139 
+0 5 2 0 1
+0 1 1
+0 2 1 1
+cfn=(732)
+calls=1 0 
+0 9 1 7 1
+0 5 3 1
+
+fn=(1098)
+0 6 0 3
+cfn=(1100) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_compress_d10
+calls=2 0 
+0 404 21 32 5 0 2
+0 3 0 1 1
+cfn=(1100)
+calls=2 0 
+0 404 21 32 0 0 1
+0 6 2
+cfn=(1100)
+calls=2 0 
+0 404 21 32 0 0 4
+
+fn=(674) OQS_CPU_has_extension
+0 15 0 6 2
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=9 139 
+0 15 6 0 1
+0 3 3 0 1 1
+0 24 9 0 0 1
+
+fn=(746)
+0 752 178 89 9 0 1
+
+fn=(750)
+0 2376 286 0 25 4
+cfn=(751) __KeccakF1600'2
+calls=48 0 
+0 54670 6600 0 0 2
+
+fn=(751)
+0 54648 6578 0 0 2
+cfn=(751)
+calls=1056 0 
+0 601612 72842 0 0 18
+0 22 22
+
+fn=(752)
+0 2 2
+cfn=(754)
+calls=3 0 
+0 114 28 22 1
+
+fn=(810)
+0 6 2 0 2
+cfn=(812)
+calls=6 0 
+0 212 46 38 6
+
+fn=(842)
+0 5 1 2 1
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=3 139 
+0 5 2
+0 1 1
+0 2 1 1
+cfn=(732)
+calls=3 0 
+0 9 1 7
+0 3 2 1
+
+fn=(848)
+0 2 2
+cfn=(850) SHA3_shake128_inc_finalize
+calls=3 0 
+0 35 10 6 1
+
+fn=(874)
+0 96 10 50 7
+cfn=(876) OQS_SHA3_shake256_x4
+calls=6 0 
+0 13372 2310 1634 737 1
+0 8 0 2 2
+cfn=(900) PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_cbd2
+calls=6 0 
+0 762 10 32 53 0 7
+0 6 2 2
+cfn=(900)
+calls=6 0 
+0 762 10 32 0 0 8
+0 6 2 2 2
+cfn=(900)
+calls=6 0 
+0 762 10 32 0 0 1
+0 6 2 2
+cfn=(900)
+calls=6 0 
+0 762 10 32 0 0 6
+0 228 18 192 2
+
+fn=(930)
+0 12 0 6 2
+cfn=(932)
+calls=4 0 
+0 122 38 16 7 1 3
+0 6 0 2 1
+cfn=(932)
+calls=4 0 
+0 122 38 16 0 0 4
+0 12 4
+cfn=(932)
+calls=4 0 
+0 122 38 16 0 0 3
+
+fn=(1018)
+0 7 0 3 1
+cfn=(712)
+calls=3 0 
+0 83 15 8 9 4
+0 7 0 2 1
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=3 139 
+0 5 2
+0 1 1
+0 2 1 1
+cfn=(732)
+calls=3 0 
+0 9 1 7 1
+0 5 3 1
+
+fn=(1022)
+0 2 1 0 1
+cfn=(1024)
+calls=3 0 
+0 22372 2898 235 18 10
+
+fn=(1024)
+0 48 4 12 4
+cfn=(738)
+calls=4 0 
+0 300 70 34 6 1
+0 98 14 14
+cfn=(738)
+calls=28 0 
+0 2100 490 238 0 3
+0 32 16 16
+cfn=(748)
+calls=32 0 
+0 41888 5136 128 24 6
+0 44 4 2 2
+cfn=(738)
+calls=4 0 
+0 156 34 16 0 1
+0 14 12 2
+
+fn=(1112) OQS_KEM_decaps
+0 7 1 0 1 1
+cfn=(1114) OQS_KEM_ml_kem_768_decaps
+calls=1 0 
+0 146964 21223 12855 2150 77 88 92 6 17
+
+fn=(1114)
+0 8 0 4 1 0 0 1
+cfn=(674)
+calls=1 0 
+0 19 6 2 4 1
+0 1 1 0 1 1
+0 4 0 1
+cfn=(674)
+calls=1 0 
+0 19 6 2
+0 1 1
+0 4 0 1 1 0 0 1
+cfn=(674)
+calls=1 0 
+0 19 6 2 0 1
+0 1 1
+0 9 3
+cfn=(1116)
+calls=1 0 
+0 146879 21199 12843 2143 74 88 90 6 17
+
+fn=(1076)
+0 3250 390 160 52
+
+fn=(1130)
+0 50 33 16 4 0 0 4
+
+fn=(1132)
+0 533 34 15 44 0 0 43
+
+fn=(1142)
+0 2 2
+cfn=(1144)
+calls=1 0 
+0 22310 2883 227 19 1
+
+fn=(1152)
+0 19 3 5 2 0 0 1
+cfn=(746)
+calls=1 0 
+0 6 2 1 2
+0 2 1 1
+cfn=(748)
+calls=1 0 
+0 2618 321 8
+0 12 2 2 1 0 0 1
+cfn=(746)
+calls=1 0 
+0 48 10 5 1 0 1
+0 7 5 1 1
+
+fn=(1154)
+0 2 2
+cfn=(1156)
+calls=1 0 
+0 114 28 22 1 1
+
+fn=(704)
+0 2 2 0 1 1
+cfn=(706)
+calls=3 0 
+0 3151 450 99 13 1
+
+fn=(732)
+0 45 5 35 3
+
+fn=(740)
+0 2 2 0 1
+cfn=(742) SHA3_sha3_512_inc_finalize
+calls=3 0 
+0 2779 360 32 4
+
+fn=(788)
+0 14 0 6 2 0 1
+cfn=(712)
+calls=6 0 
+0 166 30 16 7 2 0 0 1
+0 14 0 4 2
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=6 139 
+0 10 4 0 1
+0 2 2
+0 4 2 2
+cfn=(794)
+calls=6 0 
+0 220 2 202 2 0 4
+0 10 6 2
+
+fn=(800)
+0 10 2 4 2
+cob=(2)
+cfi=(171)
+cfn=(680)
+calls=6 139 
+0 10 4
+0 2 2
+0 4 2 2
+cfn=(794)
+calls=6 0 
+0 220 2 202
+0 6 4 2
+
+fn=(816) OQS_SHA3_shake128_x4_inc_squeeze
+0 4 4
+cfn=(818)
+calls=6 0 
+0 35232 6000 3498 762 1 29 2 0 17
+
+fn=(828) OQS_SHA3_shake128_x4_inc_ctx_release
+0 4 4
+cfn=(830)
+calls=6 0 
+0 304 56 84 34 1
+
+fn=(834)
+0 2 2 0 1
+cfn=(836)
+calls=3 0 
+0 119 23 22 11
+
+fn=(850)
+0 6 3 2
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 4 1 1 1
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 3 2 1
+
+fn=(866)
+0 1170 162 144 6
+
+fn=(876)
+0 4 4 0 2 1
+cfn=(878)
+calls=6 0 
+0 13368 2306 1634 735
+
+fn=(894)
+0 8 2 4 1
+cfn=(820)
+calls=6 0 
+0 11616 1996 1150 658
+0 4 2
+
+fn=(1026)
+0 2 2
+cfn=(1028) SHA3_sha3_256_inc_finalize
+calls=3 0 
+0 2747 352 28 7
+
+fn=(1046)
+0 12 0 6 1
+cfn=(1048)
+calls=4 0 
+0 310 34 36 8 7 2 0 2
+0 6 0 2
+cfn=(1048)
+calls=4 0 
+0 310 34 36 0 4 0 0 1
+0 12 4
+cfn=(1048)
+calls=4 0 
+0 310 34 36 0 0 1
+
+fn=(1100)
+0 3 0 0 1
+cfn=(1102)
+calls=6 0 
+0 1209 63 96 4 0 7
+
+fn=(1146)
+0 2 2 0 0 1
+cfn=(1148)
+calls=1 0 
+0 35 10 6 2 0 0 1
+
+fn=(742)
+0 12 3 5 1
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 4 1 1
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 16 3 2 2
+cfn=(746)
+calls=3 0 
+0 6 2 1
+0 2 1 1
+cfn=(748)
+calls=3 0 
+0 2618 321 8
+0 12 2 2
+cfn=(746)
+calls=3 0 
+0 80 18 9
+0 7 5 1 1
+
+fn=(756)
+0 24 0 16 4
+cfn=(762)
+calls=22 0 
+0 440 40 152 30 3
+0 8 8 0 2
+0 40 8
+cob=(2)
+cfi=(163)
+cfn=(778) free
+calls=22 3441 
+0 520 152 88 22 1
+0 8 8 0 3 1
+
+fn=(784)
+0 32 0 16 3 0 1
+cfn=(786)
+calls=6 0 
+0 444 50 232 16 3 5 0 1
+0 14 0 2
+cfn=(796)
+calls=6 0 
+0 1264 208 374 33 0 2
+0 28 0 10 1
+cfn=(816)
+calls=6 0 
+0 35236 6004 3498 762 1 29 2 0 17
+0 6 0 2 2
+cfn=(826)
+calls=6 0 
+0 1458 153 94 22 8
+0 22 2 6 4
+cfn=(826)
+calls=6 0 
+0 1418 148 92 0 4
+0 18 2 4 1
+cfn=(826)
+calls=6 0 
+0 1434 150 94 0 3
+0 20 4 6 3
+cfn=(826)
+calls=6 0 
+0 1365 143 90 0 1
+0 24 8 4 4
+cfn=(828)
+calls=6 0 
+0 308 60 84 34 1
+0 554 18 516 2
+
+fn=(806)
+0 1184 168 168 12 0 1
+
+fn=(884)
+0 4 4
+cfn=(886)
+calls=6 0 
+0 674 112 102 16
+
+fn=(888)
+0 4 4 0 1
+cfn=(890)
+calls=6 0 
+0 218 48 38 8
+
+fn=(900)
+0 3048 40 128 53 0 22
+
+fn=(940)
+0 30
+cfn=(942)
+calls=12 0 
+0 4660 1185 835 30 1 4
+
+fn=(976)
+0 3 0 2
+cfn=(978)
+calls=5 0 
+0 171 22 18 9
+0 2 0 1
+cfn=(978)
+calls=5 0 
+0 171 22 18
+0 3 1
+cfn=(978)
+calls=5 0 
+0 171 22 18
+
+fn=(986)
+0 810 90 80 7
+
+fn=(1012)
+0 2 2 0 1 1
+cfn=(1014)
+calls=3 0 
+0 25388 3315 315 42 17
+
+fn=(1028)
+0 12 3 5 2
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 4 1 1
+cfn=(744)
+calls=3 0 
+0 11 2 1
+0 16 3 2 1
+cfn=(746)
+calls=3 0 
+0 6 2 1 2
+0 2 1 1
+cfn=(748)
+calls=3 0 
+0 2618 321 8
+0 12 2 2 1
+cfn=(746)
+calls=3 0 
+0 48 10 5 1
+0 7 5 1
+
+ob=(1) /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+fl=(82) ./elf/./elf/dl-lookup.c
+fn=(312) check_match
+70 5 0 2
++3 1 1 0 0 1
+-3 8 2 3
++3 6 1
++13 5
++3 6 2 1
+cfi=(34) ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+cfn=(100) strcmp
+calls=50 +42 
+* 24 7 0 3
+* 2
++4 1 1
++1 2
++65 7 6
+-1 1
+-17 2
++2 2 2 0 0 1
++1 1
+-1 2
++1 3
+-1 2
+
+fn=(306) _dl_lookup_symbol_x
+769 4 0 4
++2 1
+-2 3 0 2
++2 1
+-2 4 0 3
+fi=(83) ./elf/../sysdeps/generic/dl-new-hash.h
+74 1 1 0 0 1
++3 2
+-8 1
++1 2
++10 1 1
++1 2
+-1 6 6
++1 12
++20 7
+-2 7
++6 7
+-3 14
++2 7
+-30 7 7
++3 14
+fe=(82)
+771 1
++4 1 0 1
+-4 1 0 1
++8 2
+-6 3 1 1
++15 3 0 1
+-15 5
++16 15 6 8
+cfn=(310) do_lookup_x
+calls=581 344 
+* 341 103 40 3 5
+* 7 3
++28 2 1
+-23 2
+-5 1 1
++29 7 1
++35 10 1 1
++14 3 1
++3 2 1
+-57 2 1 1
++76 9 7
+782 1 1
++6 3 2
+-6 1
++6 2
+-7 2
+
+fn=(310)
+344 8 0 6
++1 1 1
+-1 6 2 4
++7 1 1
++11 1 1
+fi=(84) ./elf/../sysdeps/generic/dl-protected.h
+29 2 0 1
+fe=(82)
+362 3
++31 9 3
++8 3 3
+-4 3 0 3
++1 3 0 3
++3 12 6
++1 6 6
++3 3 3
+-3 3
++4 6
++3 3
++4 3 3
+-4 3
++1 3 3
+-2 3 3 0 0 1
++5 9
++3 21
++99 6 2 2
+355 9 9
++3 6
++4 6
++21 6 3
++4 6 3
+fi=(4) ./elf/../sysdeps/generic/ldsodefs.h
+139 2 1
++1 3
+fe=(82)
+473 2
+fi=(84)
+29 2
+fe=(82)
+480 8 1
++16 2 1 1
++1 1 0 1
++1 1
++21 8 7
+-99 3
+-1 2 2 0 0 1
++2 2
++2 1 1
++6 2 0 2
+-6 1
++6 8 0 5
++7 9
+-10 20 4 0 0 1
++3 1
+-1 1
++1 1 1 1
+-1 2
++2 1
+-1 1
++1 1
+-1 12 6 5
+cfn=(312)
+calls=575 70 
+* 80 22 6 3 2
++4 10 5
+
+fl=(34)
+fn=(100)
+131 1 0 0 1
++1 1
++2 1
++1 1
++21 1
++1 1
++1 1
++1 1
++1 1 1
++1 1 1
++1 1 1
++1 1 1
++17 1
++1 1
++1 1
++1 1
++1 1
++1 1 0 0 1
++1 1
+2104 1 0 0 1
++6 1 1
++1 1 1
++8 1
++1 1 1
+
+fl=(158) ./elf/./elf/dl-runtime.c
+fn=(586) _dl_fixup
+46 8 0 5
++2 5 4 0 0 1
++1 1 1
++6 1
+fi=(204) ./elf/../sysdeps/x86_64/dl-runtime.h
+-27 1
+fe=(158)
++21 1 1
++5 1 1 0 0 1
++1 1 1
+-6 1
++6 2
++1 1 1 0 0 1
++2 1 1
+-2 1
++2 1
+-2 5 0 1
++7 2
++4 2 1 0 0 1
++4 1 1 0 0 1
+-2 1
++2 2
++4 3 2 0 0 1
++1 4 1
++1 3 1 0 0 1 0 0 1
+-8 1
++16 1 1
+-1 1
++1 2
++10 10 2 3 0 1
+cfi=(82)
+cfn=(306)
+calls=30 769 
+* 529 145 63 3 6
+* 1
++4 5 3
++10 10 4 1
++15 4 1
++9 3 1
++26 3 1
+fi=(6) ./elf/../sysdeps/x86_64/dl-machine.h
++64 1 0 1
+fe=(158)
+-60 7 6
+-1 2 1
+
+fl=(157) ./elf/../sysdeps/x86_64/dl-trampoline.h
+fn=(584) _dl_runtime_resolve_xsave
+44 1 0 1
++3 1
++2 1
++10 1 1
++6 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++4 1
++1 1
++3 1 0 1
++1 1 0 1
++2 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++1 1 0 1
++2 1 0 34
++7 1 1
++1 1 1
++1 1 0 1
+cfi=(158)
+cfn=(586)
+calls=30 -52 
+* 629 181 74 3 14 0 0 1
++1 1
++5 1
++1 1
++1 1 36
++2 1 1
++1 1 1
++1 1 1
++1 1 1
++1 1 1
++1 1 1
++1 1 1
++2 1
++2 1 1
++4 1
++2 1
+
+fl=(1) ???
+fn=(0) 0x000000000001d2c0
+cob=(6) /home/wizard/Desktop/thesis/sidechannel_verification/cache_probe/cache_probe
+cfi=(150) ???
+cfn=(544) (below main)
+calls=1 0 
+0 147663 21458 12990 2159 95 90 94 7 17
+
+ob=(6)
+fl=(150)
+fn=(576) main
+0 7 2 2 1 0 0 1
+cob=(5)
+cfi=(149)
+cfn=(1112)
+calls=1 0 
+0 146971 21224 12855 2151 78 88 92 6 17
+cob=(1)
+cfi=(157)
+cfn=(584)
+calls=1 44 
+0 669 228 125 3 14 0 0 1
+0 5 3 2 2 2
+
+fn=(544)
+cob=(2)
+cfi=(151) ./csu/../csu/libc-start.c
+cfn=(546) __libc_start_main@@GLIBC_2.34
+calls=1 242 
+0 147663 21458 12990 2159 95 90 94 7 17
+
+ob=(2)
+fl=(174)
+fn=(768)
+34 16 0 0 4
++1 16 0 8
+cfi=(175) ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+cfn=(772) __memset_avx2_unaligned_erms
+calls=22 199 
+* 352 16 144 10 2
+* 8 8 0 4
++3 16 8 0 4
+
+fl=(151)
+fn=(546)
+cfi=(153) ./csu/../sysdeps/nptl/libc_start_call_main.h
+cfn=(568) (below main)
+calls=1 29 
+360 147663 21458 12990 2159 95 90 94 7 17
+
+fl=(153)
+fn=(568)
+cob=(6)
+cfi=(150)
+cfn=(576)
+calls=1 0 
+58 147663 21458 12990 2159 95 90 94 7 17
+
+fl=(175)
+fn=(772)
+199 16 0 0 3
++5 8
++1 8
++1 8
++1 8
++1 8
++21 8 8 0 3 2
++1 8
++6 8 0 8
++1 8 0 8
++12 8
++3 8
++1 8
++12 8 0 8
++1 8 0 8
++13 8
++1 8
++2 8
++3 4
++3 4
++3 4 0 4 4
++1 4 0 4
++1 4 0 4
++1 4 0 4
++1 4
++1 4
++1 4
+-6 16 0 16
++1 16 0 16
++1 16 0 16
++1 16 0 16
++1 16
++1 16
++1 20
++3 4 0 4
++1 4 0 4
++1 4 0 4
++1 4 0 4
++3 8 4
+-6 4 0 4
++1 4 0 4
++1 4 0 4
++1 4 0 4
++3 8 4
+
+fl=(171)
+fn=(680)
+139 14 14 0 5
++1 28
++4 28 14
+
+fl=(163)
+fn=(778)
+3441 16 0 0 4
+-4 40 0 40
++14 8
+-14 16 0 8
++12 8 8
++4 8 8 0 0 1
+-4 8 8
++4 16
++17 24 16 0 4
+fi=(164) ./malloc/./malloc/arena.c
+153 24
+fe=(163)
+4690 16
+4558 32 0 0 4
++1 16
++4 32
+3253 24 8
+-1 16
++1 16 8 0 4
++9 24 16
++3 32 16
+-98 8
++2 8
+-4 8 0 8
++2 24 8 8 2
++1 8 0 8
++1 8 0 8
+3271 8
+3479 8 0 8 4
++1 64 56
+
+fn=(720) _mid_memalign.isra.0
+3653 48 0 32 5
++6 16
++4 16 0 0 5
+1328 16
++19 40
+3693 24
+3215 16 8 0 0 1
++1 32 16 0 3
++1 24 8 0 0 2 0 0 1
+3698 8
++1 8 8 0 0 1
+-1 8
++2 24
+-2 16
++2 16 0 0 5
+3180 8 8
+-1 16
++13 8
+-4 8 0 8
+3738 8
+3192 8 0 8
++1 8 0 8
+3738 48 40
+-70 24 0 0 3
++8 24
+-5 16 0 0 5
+3184 16 0 0 5
++4 32 8 0 0 1
+
+fn=(718)
+3634 24 0 8 3
++1 16 8 0 0 2
++7 40
++8 8
+-1 8
++1 8 8
+-1 8
+cfn=(720)
+calls=22 +4 
+* 536 96 56 31 5 0 0 1
+
+totals: 147652 21457 12984 2157 94 88 93 7 17

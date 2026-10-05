@@ -1,0 +1,1685 @@
+==150275== Memcheck, a memory error detector
+==150275== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==150275== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==150275== Command: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/../ctgrind/ct_test_clang-O3 ML-KEM-768 1
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487273A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:332)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E7F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:71)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E88: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:73)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E98: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:74)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EA7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:78)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EDF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:93)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EEE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:95)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EFB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:97)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F1A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E30: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:54)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875ED1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:91)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F0E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F3A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F63: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:103)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F8E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:114)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FA3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:119)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FB5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FE1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FF0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:125)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487600F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x487601E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876035: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487604C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487605C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487603C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876042: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:135)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876A7D: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876A7D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E7F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:71)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E88: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:73)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E98: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:74)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EA7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:78)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EDF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:93)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EEE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:95)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EFB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:97)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F1A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E30: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:54)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875ED1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:91)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F0E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F3A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F63: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:103)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F8E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:114)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FA3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:119)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FB5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FE1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FF0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:125)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487600F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876016: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:131)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x487601E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487603C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487604C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876B1D: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876B1D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E7F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:71)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E88: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:73)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E98: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:74)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EA7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:78)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EDF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:93)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EEE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:95)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EFB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:97)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F1A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E30: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:54)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875ED1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:91)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F0E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F3A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F63: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:103)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F8E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:114)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FA3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:119)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FB5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FE1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FF0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:125)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487600F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876016: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:131)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x487601E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487603C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876042: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:135)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487604C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487605C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876BBE: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876BBE: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876BBE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876BC7: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876BC7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E7F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:71)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E88: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:73)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E98: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:74)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EA7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:78)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EDF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:93)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EEE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:95)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EFB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:97)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F1A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E30: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:54)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875ED1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:91)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F0E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F3A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FE1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FF0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:125)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487600F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876016: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:131)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x487601E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876035: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487604C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487605C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== 
+==150275== More than 100 errors detected.  Subsequent errors
+==150275== will still be recorded, but in less detail than before.
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487603C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876042: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:135)
+==150275==    by 0x4876C58: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876C58: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876C58: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876C5F: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876C5F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876D11: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:180)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876D22: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:180)
+==150275==    by 0x4871526: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876016: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:131)
+==150275==    by 0x4876A76: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876A76: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876A76: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876A7D: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876A7D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:170)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876035: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487605C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x4876B16: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x4876B16: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x4876B16: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876B1D: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876B1D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:171)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876BC7: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876BC7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:172)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876C5F: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x4876C5F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:173)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876D11: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:180)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876D22: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:180)
+==150275==    by 0x4871572: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:246)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E7F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:71)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E88: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:73)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E98: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:74)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EA7: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:78)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EDF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:93)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EEE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:95)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875EFB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:97)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F1A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875E30: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:54)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875ED1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:91)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F0E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:47)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875F3A: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F63: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:103)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875F8E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:114)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FA3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:119)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FB5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:101)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4875FE1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4875FF0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:125)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487600F: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876016: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:131)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x487601E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:0)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4876035: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487604C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487605C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:123)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x487603C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:133)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Use of uninitialised value of size 8
+==150275==    at 0x4876042: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c:135)
+==150275==    by 0x48772F8: mlk_rej_uniform_native (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/meta.h:52)
+==150275==    by 0x48772F8: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:127)
+==150275==    by 0x48772F8: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x48772FF: mlk_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:128)
+==150275==    by 0x48772FF: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:221)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+==150275== Conditional jump or move depends on uninitialised value(s)
+==150275==    at 0x4877380: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c:225)
+==150275==    by 0x487158B: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:267)
+==150275==    by 0x48718DC: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c:437)
+==150275==    by 0x48727A2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (vendor/liboqs-src/src/kem/ml_kem/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c:346)
+==150275==    by 0x10933A: main (ct_test.c:66)
+==150275==  Uninitialised value was created by a client request
+==150275==    at 0x109320: main (ct_test.c:63)
+==150275== 
+INFO: alg=ML-KEM-768 poison=1 decaps_rc=0
+==150275== 
+==150275== HEAP SUMMARY:
+==150275==     in use at exit: 0 bytes in 0 blocks
+==150275==   total heap usage: 28 allocs, 28 frees, 17,056 bytes allocated
+==150275== 
+==150275== All heap blocks were freed -- no leaks are possible
+==150275== 
+==150275== For lists of detected and suppressed errors, rerun with: -s
+==150275== ERROR SUMMARY: 1083 errors from 143 contexts (suppressed: 0 from 0)

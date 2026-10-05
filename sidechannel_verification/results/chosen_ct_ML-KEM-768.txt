@@ -1,0 +1,7 @@
+alg=ML-KEM-768
+n_valid=100000 n_corrupted=99979
+best-crop: cutoff=40278 cycles (n_valid=75123 n_corrupted=75488)
+mean_valid=39872.7 mean_corrupted=39876.4 diff=-3.7 cycles (at max-|t| crop)
+median_valid=39942 median_corrupted=39942 (diff=0 cycles)
+MAX_ABS_WELCH_T=3.674 (signed -3.674) over 10 crop thresholds
+VERDICT: NO LEAK (max|t|<=4.5): valid vs decode-failure indistinguishable

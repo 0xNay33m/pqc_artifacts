@@ -1,0 +1,1673 @@
+==148524== Memcheck, a memory error detector
+==148524== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==148524== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==148524== Command: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/../ctgrind/ct_test_gcc-Os ML-KEM-768 1
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x486EF1E: mlk_check_sk (kem.c:131)
+==148524==    by 0x486EF1E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:332)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872226: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721E9: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:91)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487221E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487223D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722B3: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48722B3: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48722B3: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48722B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:114)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722CB: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48722CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:119)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872333: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:129)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872350: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872357: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:135)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487236C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487234C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x487233C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:131)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872364: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872C0C: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872C0C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872226: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721E9: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:91)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487221E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487223D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722B3: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48722B3: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48722B3: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48722B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:114)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722CB: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48722CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:119)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872333: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:129)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x487233C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:131)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872350: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872364: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872CC9: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872CC9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872226: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721E9: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:91)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487221E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487223D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722B3: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48722B3: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48722B3: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48722B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:114)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722CB: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48722CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:119)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872333: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:129)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x487233C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:131)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872350: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872357: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:135)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487236C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487234C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872364: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872D78: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872D78: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872D78: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872D84: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872D84: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872226: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721E9: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:91)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487221E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487223D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722B3: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48722B3: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48722B3: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48722B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:114)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722CB: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48722CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:119)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872333: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:129)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x487233C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:131)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872350: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872357: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:135)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487236C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872364: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872E42: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872E42: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872E59: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:180)
+==148524==    by 0x486E3C1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x4872C08: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872C08: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872C08: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== 
+==148524== More than 100 errors detected.  Subsequent errors
+==148524== will still be recorded, but in less detail than before.
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872C0C: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872C0C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:170)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872357: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:135)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487236C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487234C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x4872CC2: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872CC2: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872CC2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872CC9: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872CC9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:171)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872D84: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872D84: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:172)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x4872E31: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x4872E31: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x4872E31: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872E42: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x4872E42: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:173)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872E59: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (sampling.c:180)
+==148524==    by 0x486E400: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:246)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872187: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872187: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872187: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872187: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:70)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872194: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x4872194: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x4872194: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x4872194: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:72)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721A6: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721A6: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721A6: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:74)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721C0: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48721C0: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48721C0: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48721C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:78)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721F4: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:93)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872200: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872200: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:95)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872210: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x4872210: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:97)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872226: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48721E9: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48721E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:91)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487221E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:47)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x487223D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722B3: _mm_set_epi64x (emmintrin.h:595)
+==148524==    by 0x48722B3: _mm_set_epi64 (emmintrin.h:601)
+==148524==    by 0x48722B3: _mm_loadl_epi64 (emmintrin.h:712)
+==148524==    by 0x48722B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:114)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x48722CB: _mm_storeu_si128 (emmintrin.h:742)
+==148524==    by 0x48722CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:119)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:101)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48722F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872333: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:129)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x487233C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:131)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872350: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:133)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Use of uninitialised value of size 8
+==148524==    at 0x4872357: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:135)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4872364: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (rej_uniform_avx2.c:123)
+==148524==    by 0x48732FA: mlk_rej_uniform_native (meta.h:52)
+==148524==    by 0x48732FA: mlk_rej_uniform (sampling.c:127)
+==148524==    by 0x48732FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x48732FE: mlk_rej_uniform (sampling.c:128)
+==148524==    by 0x48732FE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:221)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+==148524== Conditional jump or move depends on uninitialised value(s)
+==148524==    at 0x4873392: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (sampling.c:225)
+==148524==    by 0x486E35C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (indcpa.c:267)
+==148524==    by 0x486E710: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (indcpa.c:437)
+==148524==    by 0x486EF9E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (kem.c:346)
+==148524==    by 0x10933A: main (ct_test.c:66)
+==148524==  Uninitialised value was created by a client request
+==148524==    at 0x109320: main (ct_test.c:63)
+==148524== 
+INFO: alg=ML-KEM-768 poison=1 decaps_rc=0
+==148524== 
+==148524== HEAP SUMMARY:
+==148524==     in use at exit: 0 bytes in 0 blocks
+==148524==   total heap usage: 28 allocs, 28 frees, 17,056 bytes allocated
+==148524== 
+==148524== All heap blocks were freed -- no leaks are possible
+==148524== 
+==148524== For lists of detected and suppressed errors, rerun with: -s
+==148524== ERROR SUMMARY: 919 errors from 132 contexts (suppressed: 0 from 0)

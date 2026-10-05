@@ -1,0 +1,51 @@
+==147848== Memcheck, a memory error detector
+==147848== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==147848== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==147848== Command: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/../ctgrind/ct_test_gcc-O3 BIKE-L1 1
+==147848== 
+==147848== Use of uninitialised value of size 1
+==147848==    at 0x4865380: _mm256_permutevar8x32_epi32 (avx2intrin.h:1046)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate256_small (decode_avx2.c:81)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate_right_avx2 (decode_avx2.c:103)
+==147848==    by 0x485FB4A: find_err1 (decode.c:156)
+==147848==    by 0x485FB4A: OQS_KEM_bike_l1_decode (decode.c:270)
+==147848==    by 0x4864477: OQS_KEM_bike_l1_decaps (kem.c:243)
+==147848==    by 0x10933A: main (ct_test.c:66)
+==147848== 
+==147848== Use of uninitialised value of size 1
+==147848==    at 0x4865380: _mm256_permutevar8x32_epi32 (avx2intrin.h:1046)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate256_small (decode_avx2.c:81)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate_right_avx2 (decode_avx2.c:103)
+==147848==    by 0x485FEDA: find_err2 (decode.c:214)
+==147848==    by 0x485FEDA: OQS_KEM_bike_l1_decode (decode.c:281)
+==147848==    by 0x4864477: OQS_KEM_bike_l1_decaps (kem.c:243)
+==147848==    by 0x10933A: main (ct_test.c:66)
+==147848== 
+==147848== Use of uninitialised value of size 1
+==147848==    at 0x4865380: _mm256_permutevar8x32_epi32 (avx2intrin.h:1046)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate256_small (decode_avx2.c:81)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate_right_avx2 (decode_avx2.c:103)
+==147848==    by 0x48601AA: find_err2 (decode.c:214)
+==147848==    by 0x48601AA: OQS_KEM_bike_l1_decode (decode.c:288)
+==147848==    by 0x4864477: OQS_KEM_bike_l1_decaps (kem.c:243)
+==147848==    by 0x10933A: main (ct_test.c:66)
+==147848== 
+==147848== Use of uninitialised value of size 1
+==147848==    at 0x4865380: _mm256_permutevar8x32_epi32 (avx2intrin.h:1046)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate256_small (decode_avx2.c:81)
+==147848==    by 0x4865380: OQS_KEM_bike_l1_rotate_right_avx2 (decode_avx2.c:103)
+==147848==    by 0x4860499: find_err1 (decode.c:156)
+==147848==    by 0x4860499: OQS_KEM_bike_l1_decode (decode.c:270)
+==147848==    by 0x4864477: OQS_KEM_bike_l1_decaps (kem.c:243)
+==147848==    by 0x10933A: main (ct_test.c:66)
+==147848== 
+INFO: alg=BIKE-L1 poison=1 decaps_rc=0
+==147848== 
+==147848== HEAP SUMMARY:
+==147848==     in use at exit: 0 bytes in 0 blocks
+==147848==   total heap usage: 13 allocs, 13 frees, 10,065 bytes allocated
+==147848== 
+==147848== All heap blocks were freed -- no leaks are possible
+==147848== 
+==147848== For lists of detected and suppressed errors, rerun with: -s
+==147848== ERROR SUMMARY: 99400 errors from 4 contexts (suppressed: 4288 from 2)

@@ -1,0 +1,1276 @@
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0A61E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D910: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D926: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D91E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D93D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA33: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA3C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA50: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA57: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA6C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA4C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA64: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E30C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D910: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D926: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D91E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D93D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA33: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA3C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA50: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA57: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA6C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA64: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E3C9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D910: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D926: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D91E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D93D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA33: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA3C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA50: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA57: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA64: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E484: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D910: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D926: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D91E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D93D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA33: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA3C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA50: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA57: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA6C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA64: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E531: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E542: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E559: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09AC1: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E308: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== 
+==143474== More than 100 errors detected.  Subsequent errors
+==143474== will still be recorded, but in less detail than before.
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E30C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA4C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E3C2: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E3C9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA6C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E478: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E484: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E542: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E559: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform_x4 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09B00: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D887: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D894: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8A6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8C0: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8F4: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D900: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D910: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D926: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D8E9: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D91E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D93D: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9B3: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0D9CB: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9DE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9D6: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0D9F5: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA33: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA3C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA50: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Use of uninitialised value of size 8
+==143474==    at 0x4A0DA57: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0DA64: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_rej_uniform_avx2 (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0E9FA: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0E9FE: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+==143474== Conditional jump or move depends on uninitialised value(s)
+==143474==    at 0x4A0EA92: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_poly_rej_uniform (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09A5C: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_gen_matrix (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A09E10: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_indcpa_enc (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x4A0A69E: PQCP_MLKEM_NATIVE_MLKEM768_X86_64_dec (in /home/wizard/Desktop/thesis/vendor/liboqs-install/lib/liboqs.so.0.14.0)
+==143474==    by 0x10933A: main (ct_test.c:66)
+==143474==  Uninitialised value was created by a client request
+==143474==    at 0x109320: main (ct_test.c:63)
+==143474== 
+INFO: alg=ML-KEM-768 poison=1 decaps_rc=0

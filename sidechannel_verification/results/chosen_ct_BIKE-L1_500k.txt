@@ -1,0 +1,7 @@
+alg=BIKE-L1
+n_valid=500000 n_corrupted=499944
+best-crop: cutoff=1221255 cycles (n_valid=300236 n_corrupted=299754)
+mean_valid=1196029.5 mean_corrupted=1195990.7 diff=38.9 cycles (at max-|t| crop)
+median_valid=1210461 median_corrupted=1210482 (diff=-21 cycles)
+MAX_ABS_WELCH_T=1.191 (signed 1.191) over 10 crop thresholds
+VERDICT: NO LEAK (max|t|<=4.5): valid vs decode-failure indistinguishable

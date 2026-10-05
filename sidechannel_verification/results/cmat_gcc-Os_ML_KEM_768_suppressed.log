@@ -1,0 +1,15 @@
+==148525== Memcheck, a memory error detector
+==148525== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==148525== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==148525== Command: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/../ctgrind/ct_test_gcc-Os ML-KEM-768 1
+==148525== 
+INFO: alg=ML-KEM-768 poison=1 decaps_rc=0
+==148525== 
+==148525== HEAP SUMMARY:
+==148525==     in use at exit: 0 bytes in 0 blocks
+==148525==   total heap usage: 28 allocs, 28 frees, 17,056 bytes allocated
+==148525== 
+==148525== All heap blocks were freed -- no leaks are possible
+==148525== 
+==148525== For lists of detected and suppressed errors, rerun with: -s
+==148525== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 932 from 211)

@@ -1,0 +1,163 @@
+-- The C compiler identification is Clang 19.1.7
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /bin/clang
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CC_SUPPORTS_WA_NOEXECSTACK
+-- Performing Test CC_SUPPORTS_WA_NOEXECSTACK - Success
+-- Performing Test LD_SUPPORTS_WL_Z_NOEXECSTACK
+-- Performing Test LD_SUPPORTS_WL_Z_NOEXECSTACK - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Algorithms filtered for KEM_bike_l1;KEM_ml_kem_768
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Looking for aligned_alloc
+-- Looking for aligned_alloc - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Looking for memalign
+-- Looking for memalign - found
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Looking for explicit_memset
+-- Looking for explicit_memset - not found
+-- Looking for memset_s
+-- Looking for memset_s - not found
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/build_clang-O2
+ninja: Entering directory `/home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/build_clang-O2'
+[1/103] Building C object src/common/CMakeFiles/common.dir/aes/aes.c.o
+[2/103] Building C object src/CMakeFiles/oqs.dir/kem/kem.c.o
+[3/103] Building C object src/common/CMakeFiles/common.dir/aes/aes_impl.c.o
+[4/103] Building C object src/CMakeFiles/oqs.dir/sig/sig.c.o
+[5/103] Building C object src/common/CMakeFiles/common.dir/sha3/avx512vl_sha3.c.o
+[6/103] Building C object src/common/CMakeFiles/common.dir/sha2/sha2_impl.c.o
+[7/103] Building C object src/common/CMakeFiles/common.dir/sha2/sha2.c.o
+[8/103] Building C object src/common/CMakeFiles/common.dir/sha3/xkcp_sha3x4.c.o
+[9/103] Building C object src/common/CMakeFiles/common.dir/sha3/avx512vl_sha3x4.c.o
+[10/103] Building C object src/common/CMakeFiles/common.dir/sha3/xkcp_sha3.c.o
+[11/103] Building C object src/common/CMakeFiles/common.dir/aes/aes256_ni.c.o
+[12/103] Building C object src/common/CMakeFiles/common.dir/aes/aes128_ni.c.o
+[13/103] Building C object src/common/CMakeFiles/common.dir/pqclean_shims/fips202.c.o
+[14/103] Building C object src/CMakeFiles/oqs.dir/sig_stfl/sig_stfl.c.o
+[15/103] Building C object src/common/CMakeFiles/common.dir/sha3/sha3x4.c.o
+[16/103] Building C object src/common/CMakeFiles/common.dir/rand/rand.c.o
+[17/103] Building C object src/common/CMakeFiles/common.dir/sha3/sha3.c.o
+[18/103] Building C object src/common/CMakeFiles/common.dir/common.c.o
+[19/103] Building C object src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600times4_serial.dir/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c.o
+[20/103] Building ASM object src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600_avx2.dir/KeccakP-1600/avx2/KeccakP-1600-AVX2.S.o
+[21/103] Building C object src/kem/bike/CMakeFiles/kem_bike.dir/kem_bike.c.o
+[22/103] Building ASM object src/common/sha3/avx512vl_low/CMakeFiles/sha3_avx512vl_low.dir/SHA3-times4-AVX512VL.S.o
+[23/103] Building ASM object src/common/sha3/avx512vl_low/CMakeFiles/sha3_avx512vl_low.dir/KeccakP-1600-times4-AVX512VL.S.o
+[24/103] Building ASM object src/common/sha3/avx512vl_low/CMakeFiles/sha3_avx512vl_low.dir/KeccakP-1600-AVX512VL.S.o
+[25/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/error.c.o
+[26/103] Building ASM object src/common/sha3/avx512vl_low/CMakeFiles/sha3_avx512vl_low.dir/SHA3-AVX512VL.S.o
+[27/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_base_portable.c.o
+[28/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/shake_prf.c.o
+[29/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/decode.c.o
+[30/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_inv.c.o
+[31/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_ksqr_portable.c.o
+[32/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul.c.o
+[33/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/sampling_portable.c.o
+[34/103] Building C object src/common/CMakeFiles/common.dir/pqclean_shims/fips202x4.c.o
+[35/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/decode_portable.c.o
+[36/103] Building C object src/common/CMakeFiles/common.dir/aes/aes_c.c.o
+[37/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/sampling.c.o
+[38/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/utilities.c.o
+[39/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/kem.c.o
+[40/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_base_vpclmul.c.o
+[41/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/kem_ml_kem_768.c.o
+[42/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/sampling_avx2.c.o
+[43/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_avx2.c.o
+[44/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/debug.c.o
+[45/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_portable.c.o
+[46/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_avx512.c.o
+[47/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_ksqr_avx512.c.o
+[48/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/compress.c.o
+[49/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/decode_avx512.c.o
+[50/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/sampling_avx512.c.o
+[51/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_ksqr_avx2.c.o
+[52/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/verify.c.o
+[53/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/gf2x_mul_base_pclmul.c.o
+[54/103] Building C object src/kem/bike/CMakeFiles/bike_l1.dir/additional_r4/decode_avx2.c.o
+[55/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/basemul.S.o
+[56/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/indcpa.c.o
+[57/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/sampling.c.o
+[58/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/compress.c.o
+[59/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/poly_k.c.o
+[60/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/kem.c.o
+[61/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/basemul.c.o
+[62/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/kem.c.o
+[63/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/debug.c.o
+[64/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/intt.S.o
+[65/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/compress_avx2.c.o
+[66/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/mulcache_compute.S.o
+[67/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/ntttobytes.S.o
+[68/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/ntt.S.o
+[69/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_ref.dir/mlkem-native_ml-kem-768_ref/mlkem/src/poly.c.o
+[70/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/nttfrombytes.S.o
+[71/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/nttunpack.S.o
+[72/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/indcpa.c.o
+[73/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/reduce.S.o
+[74/103] Building ASM object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/tomont.S.o
+[75/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/consts.c.o
+[76/103] Building C object src/common/CMakeFiles/internal.dir/aes/aes_impl.c.o
+[77/103] Building C object src/common/CMakeFiles/internal.dir/aes/aes.c.o
+[78/103] Building C object src/common/CMakeFiles/internal.dir/aes/aes256_ni.c.o
+[79/103] Building C object src/common/CMakeFiles/internal.dir/sha2/sha2_impl.c.o
+[80/103] Building C object src/common/CMakeFiles/common.dir/sha2/sha2_c.c.o
+[81/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_avx2.c.o
+[82/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/verify.c.o
+[83/103] Building C object src/common/CMakeFiles/internal.dir/aes/aes128_ni.c.o
+[84/103] Building C object src/common/CMakeFiles/internal.dir/sha2/sha2.c.o
+[85/103] Building C object src/common/CMakeFiles/internal.dir/aes/aes_c.c.o
+[86/103] Building C object src/common/CMakeFiles/internal.dir/sha3/avx512vl_sha3.c.o
+[87/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/poly.c.o
+[88/103] Building C object src/common/CMakeFiles/internal.dir/sha3/avx512vl_sha3x4.c.o
+[89/103] Building C object src/common/CMakeFiles/internal.dir/sha3/xkcp_sha3x4.c.o
+[90/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/poly_k.c.o
+[91/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/native/x86_64/src/rej_uniform_table.c.o
+[92/103] Building C object src/common/CMakeFiles/internal.dir/sha3/sha3x4.c.o
+[93/103] Building C object src/common/CMakeFiles/internal.dir/sha3/xkcp_sha3.c.o
+[94/103] Building C object src/common/CMakeFiles/internal.dir/sha3/sha3.c.o
+[95/103] Building C object src/kem/ml_kem/CMakeFiles/ml_kem_768_x86_64.dir/mlkem-native_ml-kem-768_x86_64/mlkem/src/sampling.c.o
+[96/103] Building C object src/common/CMakeFiles/internal.dir/common.c.o
+[97/103] Building C object src/common/CMakeFiles/internal.dir/rand/rand_nist.c.o
+[98/103] Building C object src/common/CMakeFiles/internal.dir/sha2/sha2_c.c.o
+[99/103] Building C object src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600times4_avx2.dir/KeccakP-1600times4/avx2/KeccakP-1600-times4-SIMD256.c.o
+[100/103] Building C object src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600_plain64.dir/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c.o
+[101/103] Linking C shared library lib/liboqs.so.0.14.0
+[102/103] Creating library symlink lib/liboqs.so.8 lib/liboqs.so
+[103/103] Linking C static library lib/liboqs-internal.a
+ninja: Entering directory `/home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/build_clang-O2'
+[0/1] Install the project...
+-- Install configuration: ""
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/cmake/liboqs/liboqsConfig.cmake
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/cmake/liboqs/liboqsConfigVersion.cmake
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/pkgconfig/liboqs.pc
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/liboqs.so.0.14.0
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/liboqs.so.8
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/liboqs.so
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/cmake/liboqs/liboqsTargets.cmake
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/lib/cmake/liboqs/liboqsTargets-noconfig.cmake
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/oqs.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/aes_ops.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/common.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/rand.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/sha2_ops.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/sha3_ops.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/sha3x4_ops.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/kem.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/sig.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/sig_stfl.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/kem_bike.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/kem_ml_kem.h
+-- Installing: /home/wizard/Desktop/thesis/sidechannel_verification/compiler_matrix/install_clang-O2/include/oqs/oqsconfig.h
