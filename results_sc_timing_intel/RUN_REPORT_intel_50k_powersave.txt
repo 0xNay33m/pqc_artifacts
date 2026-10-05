@@ -1,0 +1,25 @@
+============================================================
+INTEL RUN REPORT
+Platform: Intel Core i5-8350U
+governor: powersave
+============================================================
+
+VARYING-KEY (parity with AMD n=50,000, performance governor):
+  [varying_key_50k] n=50000
+    ML-KEM    med=    35.4 µs  CV=  48.0%  P99=    97.7 µs
+    BIKE      med=  1161.9 µs  CV=  31.8%  P99=  2372.9 µs
+    Hybrid    med=  1277.5 µs  CV=  54.4%  P99=  2596.2 µs
+    Hybrid/BIKE CV ratio: 1.7×
+
+
+DUDECT hybrid:
+  (not run this session)
+
+AMD reference (Platform A): hybrid CV≈141%  BIKE CV≈8.0%  ratio≈17×
+
+How to read Intel varying-key 50k:
+  Hybrid CV < 20%  → platform-specific tail; Intel does not replicate AMD magnitude
+  Hybrid CV ~100%+ → key-rotation tail may be broader x86 hybrid behaviour
+============================================================
+Full stats: /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/summary_stats.json
+Run log:    /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/run.log

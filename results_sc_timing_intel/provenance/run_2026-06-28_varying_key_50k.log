@@ -1,0 +1,110 @@
+[2026-06-28T23:19:56+06:00] === RUN_INTEL.sh start (mode=varying-key check_only=0) ===
+[2026-06-28T23:19:56+06:00] Bundle: /home/nullx-a/Downloads/intel_timing_bundle
+[2026-06-28T23:19:56+06:00] 
+[2026-06-28T23:19:56+06:00] ── Phase 1 — Platform info ──
+run_date: 2026-06-28T23:19:56+06:00
+mode: varying-key
+cpu_affinity: 2
+varying_key_samples: 50000
+dudect_samples_per_class: 500000
+governor: powersave
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+CPU family:                              6
+Model:                                   142
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                10
+Microcode version:                       0xf6
+CPU(s) scaling MHz:                      66%
+CPU max MHz:                             3600.0000
+CPU min MHz:                             400.0000
+BogoMIPS:                                3799.90
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+Virtualization:                          VT-x
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                1 MiB (4 instances)
+Linux NullX-A 6.19.14+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.19.14-1+kali1 (2026-05-05) x86_64 GNU/Linux
+[2026-06-28T23:19:56+06:00] OK   Wrote /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/platform_info.txt
+[2026-06-28T23:19:56+06:00] 
+[2026-06-28T23:19:56+06:00] ── Phase 2 — Dependencies ──
+[2026-06-28T23:19:56+06:00] OK   gcc -> /usr/bin/gcc
+[2026-06-28T23:19:56+06:00] OK   make -> /usr/bin/make
+[2026-06-28T23:19:56+06:00] OK   python3 -> /usr/bin/python3
+[2026-06-28T23:19:57+06:00] OK   numpy/scipy available
+[2026-06-28T23:19:57+06:00] OK   Disk space: 7467MB free
+[2026-06-28T23:19:57+06:00] 
+[2026-06-28T23:19:57+06:00] ── Phase 3 — Build sc_harness ──
+make: Entering directory '/home/nullx-a/Downloads/intel_timing_bundle/sc_harness'
+rm -f *.o timing_bench cache_bench noise_bench leg_bench dudect_bench sha2_vendor.c
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c timing_bench.c -o timing_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c hybrid_kem.c -o hybrid_kem.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c hkdf_sha256.c -o hkdf_sha256.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c sc_sha256.c -o sc_sha256.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c timing_util.c -o timing_util.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -o timing_bench timing_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -Wl,-rpath,/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c cache_bench.c -o cache_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -o cache_bench cache_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -Wl,-rpath,/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c noise_bench.c -o noise_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -o noise_bench noise_bench.o timing_util.o -L/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -Wl,-rpath,/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c leg_bench.c -o leg_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -o leg_bench leg_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -Wl,-rpath,/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -c dudect_bench.c -o dudect_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/include -I. -o dudect_bench dudect_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -Wl,-rpath,/home/nullx-a/Downloads/intel_timing_bundle/vendor/liboqs-install/lib -loqs -lm -lpthread
+make: Leaving directory '/home/nullx-a/Downloads/intel_timing_bundle/sc_harness'
+[2026-06-28T23:19:58+06:00] OK   Built timing_bench
+[2026-06-28T23:19:58+06:00] 
+[2026-06-28T23:19:58+06:00] ── Phase 4 — Smoke tests ──
+[2026-06-28T23:19:58+06:00] OK   smoke test (mlkem fixed): /tmp/intel_run_intel_smoke_169879.csv (6 lines)
+[2026-06-28T23:19:58+06:00] OK   smoke test (hybrid varying-key): /tmp/intel_run_intel_vk_smoke_169879.csv (4 lines)
+[2026-06-28T23:19:58+06:00] 
+[2026-06-28T23:19:58+06:00] ── Phase 5 — CPU governor (performance) ──
+[2026-06-28T23:19:58+06:00] WARN SKIP_SETUP_CPU=1 — not pinning governor
+[2026-06-28T23:19:58+06:00] WARN Governor is 'powersave' (SKIP_SETUP_CPU=1)
+[2026-06-28T23:19:58+06:00] 
+[2026-06-28T23:19:58+06:00] ── Phase 6 — Varying-key decaps (50000/mode) ──
+[2026-06-28T23:19:58+06:00]   -> mlkem varying-key (started 2026-06-28T23:19:58+06:00)
+[2026-06-28T23:20:02+06:00] OK   mlkem varying-key 50k: /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/mlkem_varying_key_50k.csv (50001 lines)
+[2026-06-28T23:20:02+06:00]   -> bike varying-key (started 2026-06-28T23:20:02+06:00)
+[2026-06-28T23:21:25+06:00] OK   bike varying-key 50k: /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/bike_varying_key_50k.csv (50001 lines)
+[2026-06-28T23:21:25+06:00]   -> hybrid varying-key (started 2026-06-28T23:21:25+06:00)
+[2026-06-28T23:22:59+06:00] OK   hybrid varying-key 50k: /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/hybrid_varying_key_50k.csv (50001 lines)
+[2026-06-28T23:22:59+06:00] 
+[2026-06-28T23:22:59+06:00] ── Phase 7 — Analysis and report ──
+Wrote /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/summary_stats.json
+[2026-06-28T23:23:34+06:00] OK   Wrote /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/summary_stats.json
+Traceback (most recent call last):
+  File "/home/nullx-a/Downloads/intel_timing_bundle/sc_harness/analyze_intel.py", line 97, in <module>
+    main()
+    ~~~~^^
+  File "/home/nullx-a/Downloads/intel_timing_bundle/sc_harness/analyze_intel.py", line 39, in main
+    amd = json.loads(AMD_STATS.read_text())
+                     ~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 548, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing/summary_stats.json'
+[2026-06-28T23:23:35+06:00] WARN analyze_intel.py skipped (AMD paths may be absent on Intel)
+[2026-06-28T23:23:35+06:00] OK   Wrote /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/RUN_REPORT.txt
+[2026-06-28T23:23:35+06:00] 
+[2026-06-28T23:23:35+06:00] ── Phase 8 — Package results ──
+[2026-06-28T23:23:37+06:00] OK   Created /home/nullx-a/Downloads/intel_timing_bundle/intel_results_for_amd.tar.gz (2.8M)
+[2026-06-28T23:23:37+06:00] 
+[2026-06-28T23:23:37+06:00] === RUN_INTEL.sh complete ===
+[2026-06-28T23:23:37+06:00] Results:  /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel
+[2026-06-28T23:23:37+06:00] Report:   /home/nullx-a/Downloads/intel_timing_bundle/results_sc_timing_intel/RUN_REPORT.txt
+[2026-06-28T23:23:37+06:00] Send back: /home/nullx-a/Downloads/intel_timing_bundle/intel_results_for_amd.tar.gz
