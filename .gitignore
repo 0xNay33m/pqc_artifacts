@@ -1,0 +1,17 @@
+# liboqs is fetched and built by vendor/build_liboqs.sh
+vendor/liboqs-src/
+vendor/liboqs-install/
+
+# build outputs
+*.o
+__pycache__/
+sc_harness/timing_bench
+sc_harness/cache_bench
+sc_harness/noise_bench
+sc_harness/leg_bench
+sc_harness/dudect_bench
+sidechannel_verification/compiler_matrix/build_*/
+sidechannel_verification/compiler_matrix/install_*/
+sidechannel_verification/ctgrind/ct_test_*
+sidechannel_verification/cache_probe/cache_probe
+sidechannel_verification/chosen_ct/cct_dudect
