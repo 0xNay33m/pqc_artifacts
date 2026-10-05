@@ -1,0 +1,20 @@
+
+=== corrected ===
+  mlkem  n=50000 med=24.6us CV=8.5% [8.3,8.7] P99/med=1.38
+  bike   n=50000 med=582.1us CV=7.1% [6.8,7.3] P99/med=1.42
+  hybrid n=50000 med=606.5us CV=7.4% [7.2,7.6] P99/med=1.41
+  HTAF: CV=0.87  R99=1.00  absP99=1.04
+
+=== cooled ===
+  mlkem  n=50000 med=48.6us CV=22.7% [22.4,23.0] P99/med=2.08
+  bike   n=50000 med=605.6us CV=7.8% [6.8,9.3] P99/med=1.37
+  hybrid n=50000 med=645.8us CV=7.9% [7.7,8.1] P99/med=1.40
+  HTAF: CV=0.35  R99=0.67  absP99=1.09
+
+=== legacy ===
+  mlkem  n=50000 med=24.7us CV=6.7% [6.4,6.9] P99/med=1.28
+  bike   n=50000 med=585.5us CV=159.0% [158.4,159.8] P99/med=15.44
+  hybrid n=50000 med=602.5us CV=155.2% [154.6,155.7] P99/med=13.03
+  HTAF: CV=0.98  R99=0.84  absP99=0.87
+
+Wrote /home/wizard/Desktop/thesis/results_sc_timing/keygen_isolation_perf/keygen_isolation_summary.json

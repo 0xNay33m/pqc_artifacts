@@ -1,0 +1,37 @@
+[info] SKIP_SETUP_CPU=1 — governor=powersave
+make: Entering directory '/home/wizard/Desktop/thesis/sc_harness'
+make: 'timing_bench' is up to date.
+make: Leaving directory '/home/wizard/Desktop/thesis/sc_harness'
+=== Keygen isolation (n=50000) governor=powersave ===
+--- varying-key / mlkem (2026-07-19T02:48:37+06:00) ---
+--- varying-key / bike (2026-07-19T02:48:40+06:00) ---
+--- varying-key / hybrid (2026-07-19T02:49:22+06:00) ---
+--- varying-key-cool / mlkem (2026-07-19T02:50:07+06:00) ---
+--- varying-key-cool / bike (2026-07-19T02:51:00+06:00) ---
+--- varying-key-cool / hybrid (2026-07-19T02:52:32+06:00) ---
+=== Legacy thesis path (n=10000) for comparison ===
+--- varying-key-legacy / mlkem (2026-07-19T02:54:09+06:00) ---
+--- varying-key-legacy / bike (2026-07-19T02:54:09+06:00) ---
+--- varying-key-legacy / hybrid (2026-07-19T02:54:24+06:00) ---
+=== Analyse ===
+
+=== corrected ===
+  mlkem  n=50000 med=24.6us CV=6.5% [6.2,6.9] P99/med=1.28
+  bike   n=50000 med=581.0us CV=7.8% [7.6,8.0] P99/med=1.44
+  hybrid n=50000 med=604.3us CV=6.1% [4.7,7.9] P99/med=1.10
+  HTAF: CV=0.78  R99=0.76  absP99=0.79
+
+=== cooled ===
+  mlkem  n=50000 med=46.6us CV=21.4% [21.0,21.7] P99/med=2.09
+  bike   n=50000 med=603.0us CV=8.2% [7.3,9.7] P99/med=1.41
+  hybrid n=50000 med=647.7us CV=7.6% [6.8,9.0] P99/med=1.29
+  HTAF: CV=0.36  R99=0.62  absP99=0.99
+
+=== legacy ===
+  mlkem  n=10000 med=24.7us CV=5.9% [5.3,6.6] P99/med=1.24
+  bike   n=10000 med=581.3us CV=150.4% [149.7,151.0] P99/med=12.33
+  hybrid n=10000 med=602.9us CV=152.2% [151.2,153.2] P99/med=12.69
+  HTAF: CV=1.01  R99=1.03  absP99=1.07
+
+Wrote /home/wizard/Desktop/thesis/sc_harness/../results_sc_timing/keygen_isolation/keygen_isolation_summary.json
+Done 2026-07-19T02:54:45+06:00

@@ -1,0 +1,31 @@
+[sudo] password for wizard: [setup_cpu] Setting scaling_governor=performance on all CPUs
+[setup_cpu] Governor sample (cpu0): performance
+[setup_cpu] Current freq (cpu0): 2095778 kHz
+[setup_cpu] warn: isolcpus not in kernel cmdline — CPU 2 affinity via sched_setaffinity only
+[setup_cpu] Done. Run benchmarks with CPU=2
+make: Entering directory '/home/wizard/Desktop/thesis/sc_harness'
+rm -f *.o timing_bench cache_bench noise_bench leg_bench dudect_bench sha2_vendor.c
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c timing_bench.c -o timing_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c hybrid_kem.c -o hybrid_kem.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c hkdf_sha256.c -o hkdf_sha256.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c sc_sha256.c -o sc_sha256.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c timing_util.c -o timing_util.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -o timing_bench timing_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -Wl,-rpath,/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c cache_bench.c -o cache_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -o cache_bench cache_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -Wl,-rpath,/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c noise_bench.c -o noise_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -o noise_bench noise_bench.o timing_util.o -L/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -Wl,-rpath,/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c leg_bench.c -o leg_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -o leg_bench leg_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -Wl,-rpath,/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -loqs -lm -lpthread
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -c dudect_bench.c -o dudect_bench.o
+cc -O2 -Wall -Wextra -std=c11 -I/home/wizard/Desktop/thesis/vendor/liboqs-install/include -I. -o dudect_bench dudect_bench.o hybrid_kem.o hkdf_sha256.o sc_sha256.o timing_util.o -L/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -Wl,-rpath,/home/wizard/Desktop/thesis/vendor/liboqs-install/lib -loqs -lm -lpthread
+make: Leaving directory '/home/wizard/Desktop/thesis/sc_harness'
+=== [1] Fixed-input decaps timing (50k) ===
+=== [2] Fixed-input encaps timing (50k) ===
+=== [3] Varying-ciphertext decaps timing (10k) ===
+=== [4] Varying-key decaps timing (3k) ===
+=== [5] Dudect two-class decaps (500000 per class, 1M+ total per mode) ===
+=== [6] Noise floor (50k memcpy) ===
+=== [7] Hybrid per-leg attribution (10k) ===
+=== [8] Stability: 5 independent fixed decaps runs (10k each) ===
+Experiments complete. Run: python3 analyze_results.py
