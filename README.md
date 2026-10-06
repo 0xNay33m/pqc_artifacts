@@ -2,7 +2,7 @@
 
 Measurement harness, structural verification suite, raw timing traces, and analysis scripts for the paper
 
-> *Timing Observability of Serial Post-Quantum Hybrid Key Encapsulation: A Measurement Study of ML-KEM and BIKE Decapsulation on Commodity x86 Processors* (submitted to IEEE Access).
+> *Timing Observability of Serial Post-Quantum Hybrid Key Encapsulation: A Measurement Study of ML-KEM and BIKE Decapsulation on Commodity x86 Processors* (manuscript in preparation for submission to IEEE Access).
 
 Every statistic reported in the paper can be recomputed from the raw traces in this repository with the two scripts in `analysis/`.
 
